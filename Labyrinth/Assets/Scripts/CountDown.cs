@@ -12,7 +12,31 @@ public class CountDown : MonoBehaviour
     public UnityEvent<int> OnCount = new UnityEvent<int>();
 
     bool isCounting;
+    Coroutine countCoroutine;
 
+    public void StartCount()
+    {
+        if (isCounting == false)
+        {
+            //StopAllCoroutines();
+            StopCoroutine(countCoroutine);
+        }
+        countCoroutine = StartCoroutine(CountCoroutine());
+    }
+
+    private IEnumerator CountCoroutine()
+    {
+        isCounting = true;
+        for (int i=duration; i>=0; i--)
+        {
+            OnCount.Invoke(i);
+            yield return new WaitForSecondsRealtime(1);
+        }
+        isCounting = false;
+        OnCountFinished.Invoke();
+    }
+
+    /*
     public void StartCount()
     {
         if (isCounting == true)
@@ -25,8 +49,8 @@ public class CountDown : MonoBehaviour
 
         }
         DOTween.Kill(this.transform);
-
         var seq = DOTween.Sequence();
+
         OnCount.Invoke(duration);
         for (int i = duration - 1; i >= 0; i--)
         {
@@ -38,6 +62,10 @@ public class CountDown : MonoBehaviour
         seq.Append(transform
             .DOMove(this.transform.position, 1))
             .SetUpdate(true)
-            .OnComplete(() => OnCountFinished.Invoke());
+            .OnComplete(() => {
+                isCounting = false;
+                OnCountFinished.Invoke();
+            });
     }
+    */
 }
