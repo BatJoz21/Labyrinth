@@ -8,21 +8,25 @@ public class Coin : MonoBehaviour
     [SerializeField] Transform visual;
     [SerializeField] CoinData coinData;
     [SerializeField] BaseAnimation baseAnimation;
+    [SerializeField] PlayManager playManager;
 
     public int Value { get => coinData.value; }
 
     private void Start()
     {
         visual.GetComponent<Renderer>().material = coinData.material;
-        //baseAnimation.Animate(visual);
-        Animate();
+        if (baseAnimation != null )
+        {
+            baseAnimation.Animate(visual);
+        }
     }
 
-    public void Animate()
+    private void OnCollisionEnter(Collision collision)
     {
-        var seq = DOTween.Sequence();
-        seq.Append(visual.DOLocalRotate(new Vector3(visual.eulerAngles.x, 180, 0), 0.5f));
-        seq.Append(visual.DOLocalRotate(new Vector3(visual.eulerAngles.x, 360, 0), 0.5f));
-        seq.SetLoops(-1);
+        if (collision.collider.CompareTag("ball"))
+        {
+            Destroy(this.gameObject);
+            playManager.CoinValue += coinData.value;
+        }
     }
 }

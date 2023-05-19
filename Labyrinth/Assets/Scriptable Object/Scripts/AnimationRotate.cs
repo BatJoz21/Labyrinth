@@ -12,8 +12,8 @@ public class AnimationRotate : BaseAnimation
 
         var seq = DOTween.Sequence();
 
-        seq.Append(visual.DOLocalRotate(new Vector3(visual.eulerAngles.x, 180, 0), 0.5f));
-        seq.Append(visual.DOLocalRotate(new Vector3(visual.eulerAngles.x, 360, 0), 0.5f));
+        seq.Append(visual.DOLocalRotate(new Vector3(visual.eulerAngles.x, 180, visual.eulerAngles.z), base.duration/2));
+        seq.Append(visual.DOLocalRotate(new Vector3(visual.eulerAngles.x, 360, visual.eulerAngles.z), base.duration/2));
         seq.SetLoops(-1);
     }
 }

@@ -7,8 +7,17 @@ public class PlayManager : MonoBehaviour
 {
     [SerializeField] GameObject finishedCanvas;
     [SerializeField] TMP_Text finishedText;
+    [SerializeField] TMP_Text scoreText;
 
-    int coin; //TODO
+    int coinValue = 0;
+
+    private void Update()
+    {
+        scoreText.text = coinValue.ToString();
+    }
+
+    public int CoinValue { get => coinValue; set => coinValue = value; }
+
     public void GameOver()
     {
         finishedText.text = "You Failed!!!";
@@ -17,12 +26,7 @@ public class PlayManager : MonoBehaviour
 
     public void PlayerWin()
     {
-        finishedText.text = "You Win!!!\n Score = " + GetScore();
+        finishedText.text = "You Win!!!\n Score = " + coinValue;
         finishedCanvas.SetActive(true);
-    }
-
-    private int GetScore()
-    {
-        return coin * 10;
     }
 }
