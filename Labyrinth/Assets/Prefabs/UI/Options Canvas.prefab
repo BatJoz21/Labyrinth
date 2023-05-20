@@ -605,6 +605,7 @@ GameObject:
   - component: {fileID: 8828494146338034182}
   - component: {fileID: 8828494146338034183}
   - component: {fileID: 8828494146338034185}
+  - component: {fileID: 4068980294268636443}
   m_Layer: 5
   m_Name: Options Menu
   m_TagString: Untagged
@@ -687,6 +688,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   optionsPanel: {fileID: 8828494147353011854}
+--- !u!114 &4068980294268636443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8828494146338034181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94601964f4509aa4dab99aa7c3ad2d3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioManager: {fileID: 0}
+  muteToggle: {fileID: 0}
+  bgmSlider: {fileID: 0}
+  sfxSlider: {fileID: 0}
+  bgmVolText: {fileID: 0}
+  sfxVolText: {fileID: 0}
 --- !u!1 &8828494146349773883
 GameObject:
   m_ObjectHideFlags: 0
