@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8045863214834407535}
   - component: {fileID: 8045863214834407534}
   - component: {fileID: 8045863214834407533}
+  - component: {fileID: 3707115536578788542}
   m_Layer: 0
   m_Name: Wall (1)
   m_TagString: Untagged
@@ -97,6 +98,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &3707115536578788542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8045863214834407539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6afcbc196639fd34986f73037303ed4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnBallHit:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &8045863215016050411
 GameObject:
   m_ObjectHideFlags: 0
@@ -109,6 +137,7 @@ GameObject:
   - component: {fileID: 8045863215016050407}
   - component: {fileID: 8045863215016050406}
   - component: {fileID: 8045863215016050405}
+  - component: {fileID: 8176887403262023845}
   m_Layer: 0
   m_Name: Wall (2)
   m_TagString: Untagged
@@ -194,6 +223,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &8176887403262023845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8045863215016050411}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6afcbc196639fd34986f73037303ed4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnBallHit:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &8045863215786453287
 GameObject:
   m_ObjectHideFlags: 0
@@ -206,6 +262,7 @@ GameObject:
   - component: {fileID: 8045863215786453283}
   - component: {fileID: 8045863215786453282}
   - component: {fileID: 8045863215786453281}
+  - component: {fileID: 8110803039968873746}
   m_Layer: 0
   m_Name: Wall
   m_TagString: Untagged
@@ -291,6 +348,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &8110803039968873746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8045863215786453287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6afcbc196639fd34986f73037303ed4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnBallHit:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &8045863216412015568
 GameObject:
   m_ObjectHideFlags: 0

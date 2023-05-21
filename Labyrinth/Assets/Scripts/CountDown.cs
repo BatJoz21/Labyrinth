@@ -18,8 +18,8 @@ public class CountDown : MonoBehaviour
     {
         if (isCounting == false)
         {
-            //StopAllCoroutines();
-            StopCoroutine(countCoroutine);
+            StopAllCoroutines();
+            //StopCoroutine(countCoroutine);
         }
         countCoroutine = StartCoroutine(CountCoroutine());
     }
