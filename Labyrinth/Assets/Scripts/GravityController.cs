@@ -14,6 +14,7 @@ public class GravityController : MonoBehaviour
         {
             Input.gyro.enabled = true;
         }
+        CalibrateGravity();
     }
 
     void Update()
@@ -47,7 +48,7 @@ public class GravityController : MonoBehaviour
 
         gravity.z = Mathf.Clamp(gravity.z, float.MinValue, 0);
 
-        return new Vector3(gravity.x, gravity.y, gravity.z);
+        return new Vector3(-gravity.x, gravity.y, gravity.z);
     }
 
     public void SetActive(bool value)

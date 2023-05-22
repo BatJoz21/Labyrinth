@@ -23,7 +23,7 @@ public class Coin : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.collider.CompareTag("ball"))
+        if (collision.collider.CompareTag("Ball"))
         {
             Destroy(this.gameObject);
             playManager.CoinValue += coinData.value;
