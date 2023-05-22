@@ -703,9 +703,13 @@ MonoBehaviour:
   audioManager: {fileID: 0}
   muteToggle: {fileID: 0}
   bgmSlider: {fileID: 0}
-  sfxSlider: {fileID: 0}
+  winSlider: {fileID: 0}
+  hitSlider: {fileID: 0}
+  gameoverSlider: {fileID: 0}
   bgmVolText: {fileID: 0}
-  sfxVolText: {fileID: 0}
+  winVolText: {fileID: 0}
+  hitVolText: {fileID: 0}
+  gameoverVolText: {fileID: 0}
 --- !u!1 &8828494146349773883
 GameObject:
   m_ObjectHideFlags: 0
@@ -1253,7 +1257,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Exit to Menu
+  m_text: Exit
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
